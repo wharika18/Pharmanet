@@ -1,0 +1,328 @@
+{
+	"info": {
+		"_postman_id": "275e1ef0-5224-45d2-833b-1b3cacc12fb2",
+		"name": "Supply Chain",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29011646"
+	},
+	"item": [
+		{
+			"name": "part-A",
+			"item": [
+				{
+					"name": "createPO",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "buyerCompanyCRN",
+									"value": "DIST001",
+									"type": "text"
+								},
+								{
+									"key": "sellerCompanyCRN",
+									"value": "MAN001",
+									"type": "text"
+								},
+								{
+									"key": "drugName",
+									"value": "Paracetamol",
+									"type": "text"
+								},
+								{
+									"key": "quantity",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "companyName",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/createPO",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"createPO"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createShipment",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "buyerCRN",
+									"value": "DIST001",
+									"type": "text"
+								},
+								{
+									"key": "drugName",
+									"value": "Paracetamol",
+									"type": "text"
+								},
+								{
+									"key": "listOfAssets",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "transporterCRN",
+									"value": "TRA001",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/createShipment",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"createShipment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateShipment",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "buyerCRN",
+									"value": "DIST001",
+									"type": "text"
+								},
+								{
+									"key": "drugName",
+									"value": "Paracetamol",
+									"type": "text"
+								},
+								{
+									"key": "transporterCRN",
+									"value": "TRA001",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/updateShipment",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"updateShipment"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "part-B",
+			"item": [
+				{
+					"name": "createPO",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "buyerCompanyCRN",
+									"value": "RET002",
+									"type": "text"
+								},
+								{
+									"key": "sellerCompanyCRN",
+									"value": "DIST001",
+									"type": "text"
+								},
+								{
+									"key": "drugName",
+									"value": "Paracetamol",
+									"type": "text"
+								},
+								{
+									"key": "quantity",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "companyName",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/createPO",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"createPO"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createShipment",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "buyerCRN",
+									"value": "RET002",
+									"type": "text"
+								},
+								{
+									"key": "drugName",
+									"value": "Paracetamol",
+									"type": "text"
+								},
+								{
+									"key": "listOfAssets",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "transporterCRN",
+									"value": "TRA002",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/createShipment",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"createShipment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateShipment",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "buyerCRN",
+									"value": "RET002",
+									"type": "text"
+								},
+								{
+									"key": "drugName",
+									"value": "Paracetamol",
+									"type": "text"
+								},
+								{
+									"key": "transporterCRN",
+									"value": "TRA002",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/updateShipment",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"updateShipment"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "part-c",
+			"item": [
+				{
+					"name": "retailDrug",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "drugName",
+									"value": "Paracetamol",
+									"type": "text"
+								},
+								{
+									"key": "serialNo",
+									"value": "004",
+									"type": "text"
+								},
+								{
+									"key": "retailerCRN",
+									"value": "RET002",
+									"type": "text"
+								},
+								{
+									"key": "customerAadhar",
+									"value": "AAD001",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/retailDrug",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"retailDrug"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
